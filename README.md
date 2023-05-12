@@ -4,11 +4,11 @@
 Este repositorio contiene los ejercicios referentes al módulo 3, sprint 1 del bootcamp Data Analyst de Adalab.
 
 Las librerías que se manejan son:
-    - Numpy
-    - Pandas
-    - Matplotlib
-    - Seaborn
-    - Scikit Learn
+    -[NumPy](https://numpy.org/)
+    -[Pandas](https://pandas.pydata.org/)
+    -[Matplotlib](https://matplotlib.org/)
+    -[Seaborn](https://seaborn.pydata.org/)
+    -[Scikit Learn](https://scikit-learn.org/stable/index.html)
 
 Los contenidos de este módulo son:
     - Regresión lineal fundamentos
