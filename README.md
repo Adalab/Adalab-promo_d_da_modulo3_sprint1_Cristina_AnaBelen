@@ -62,10 +62,14 @@ MODELO DE ML BASADO EN REGRESIÓN LOGÍSTICA
 
             1. Eliminamos los duplicados generados y continuamos con el modelo para ver las métricas.
             2. Eliminamos el get_dummies realizado y probamos a realizar el SMOTETomek antes de dividir datos en train y test. Esto sigue generando nulos. 
-            3. Retrocedimos al inicio y no realizamos el cambio de las variables a tipo "category".  De esta manera trabajamos con el dataset original con la única modificación de la estandarización de las tres variables consideradas inicialmente numéricas a las que se les realiza el RobustScaler. Estas variables son: distance_from_home, distance_from_last_transaction, ratio_to_median_purchase_price. 
+            3. Retrocedimos al inicio y no realizamos el cambio de las variables a tipo "category" (archivo "1.sin_modificacion_variables.ipynb).  De esta manera trabajamos con el dataset original con la única modificación de la estandarización de las tres variables consideradas inicialmente numéricas a las que se les realiza el RobustScaler. Estas variables son: distance_from_home, distance_from_last_transaction, ratio_to_median_purchase_price. Este archivo es el que hemos utilizado finalmente para realizar los distintos modelos. 
     
-     
+    - Conclusiones:
 
+            1. Hemos obtenido un modelo de regresión logística utilizando "Decision Tree" que consideramos obtiene buenos resultados. Partiendo de que en las primeras matrices de confusión habíamos visto la necesidad de mejorar el modelo para reducir los falsos negativos, podemos considerar que los resultados, como se puede ver en las matrices del archivo "4.decision_random.ipynb" son óptimos. 
+    
+            2. Realizando el modelo con "Random Forest" hemos tenido problemas de ejecución por el tiempo de procesamiento que este tipo de modelo requiere unido a un dataset con muchos registros. Los resultados que se trasladan de la ejecución de este modelo son idénticos al Decision Tree por el uso de los parámetros del Best_Stimator y se han procesado en Google Colab. 
+     
 
 
 
